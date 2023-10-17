@@ -9,7 +9,7 @@ class BarisKolom extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Widget Baris dan Kolom"),
       ),
-      body: Column(
+      body: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Row(
@@ -45,13 +45,13 @@ class BarisKolom extends StatelessWidget {
 class CellWidget extends StatelessWidget {
   final String text;
 
-  CellWidget(this.text);
+  const CellWidget(this.text);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(8.0),
-      child: Text(text, style: TextStyle(fontSize: 16.0)),
+      padding: const EdgeInsets.all(20.0),
+      child: Text(text, style: const TextStyle(fontSize: 16.0)),
     );
   }
 }
