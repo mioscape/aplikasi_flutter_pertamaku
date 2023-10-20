@@ -45,7 +45,7 @@ class BarisKolom extends StatelessWidget {
 class CellWidget extends StatelessWidget {
   final String text;
 
-  const CellWidget(this.text);
+  const CellWidget(this.text, {super.key});
 
   @override
   Widget build(BuildContext context) {
